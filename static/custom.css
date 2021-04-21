@@ -1,0 +1,14 @@
+/* Place a custom css file in your own project to use this. */
+
+body{
+    padding: 0px 15px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.margin-y{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

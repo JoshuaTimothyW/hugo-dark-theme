@@ -1,0 +1,26 @@
+{{- partial "header.html" . }}
+
+{{- $scope := .Site }}
+
+{{- if .Title }}
+  <header class="page-header"><h1>{{ .Title }}</h1></header>{{ $scope = . }}
+{{ end }}
+
+{{- range .Pages.ByLinkTitle }}
+
+{{- $class := "post-entry" }}
+<article class="{{ $class }}">
+  <header class="entry-header">
+    <h2>{{ .Title }}</h2>
+  </header>
+  <section class="entry-content">
+   <p>{{ .Description }}</p>
+  </section>
+  <footer class="entry-footer">
+    <time>{{ .Date.Format "January 2, 2006" }}</time>
+  </footer>
+  <a class="entry-link" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+
+{{- partial "footer.html" . }}
