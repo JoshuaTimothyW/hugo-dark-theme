@@ -6,7 +6,18 @@
   Welcome, to my official blog
 </h2>
 
-{{- range .Pages }}
+<!-- {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+	  {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+          <div class="tagbutton">
+		<a href={{ .RelPermalink }} title="All pages with tag <i>{{$name}}</i>">{{$name}}</a>
+		<sup>{{$cnt}}</sup>
+          </div>
+	  {{end}}
+{{end}} -->
+
+<hr>
+<h3 class="margin-y">Recent posts</h3>
+{{- range .Site.RegularPages.ByPublishDate.Reverse }}
 
 {{- $class := "post-entry" }}
 <article class="{{ $class }}">
@@ -14,7 +25,7 @@
     <h2>{{ .Title }}</h2>
   </header>
   <section class="entry-content">
-   <p>{{ .Summary | plainify | htmlUnescape }}...</p>
+   <p>{{ .Description }}</p>
   </section>
   <footer class="entry-footer">
     <time>{{ .Date.Format "January 2, 2006" }}</time>
