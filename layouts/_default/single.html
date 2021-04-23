@@ -11,8 +11,7 @@
     {{- if .Params.tags }}
       <ul class="post-tags">
         {{- range .Params.tags }}
-        {{- $href := print (absURL "tags/") (urlize .) }}
-        <li><a href="{{ $href }}">{{ . }}</a></li>
+			<li><a class="tag is-dark is-rounded" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . | title }}</a></li>
         {{- end }}
       </ul>
     {{- end }}
