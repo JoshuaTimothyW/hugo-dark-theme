@@ -6,14 +6,16 @@
   Welcome, to my official blog
 </h2>
 
-<!-- {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
-	  {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
-          <div class="tagbutton">
-		<a href={{ .RelPermalink }} title="All pages with tag <i>{{$name}}</i>">{{$name}}</a>
-		<sup>{{$cnt}}</sup>
-          </div>
-	  {{end}}
-{{end}} -->
+<ul class="post-tags text-center">
+  {{ range .Site.Taxonomies.tags }}
+          <li>
+            <a class="notification" href="{{ .Page.Permalink }}">
+              {{ .Page.Title }}
+              <!-- <span class="badge">{{ .Count }}</span> -->
+            </a> 
+          </li>
+  {{ end }}
+</ul>
 
 <hr>
 <h3 class="margin-y">Recent posts</h3>
