@@ -6,7 +6,9 @@
     <div class="post-meta margin-y">
       {{- if or .Params.Author .Site.Author.name }}
       {{- .Params.Author | default .Site.Author.name }} · {{ end }}
-      {{- .Date.Format "January 2, 2006" -}}
+      {{ if .Params.Date }}
+        {{- .Date.Format "January 2, 2006" -}}
+      {{ end }}
     </div>
     {{- if .Params.tags }}
       <ul class="post-tags">

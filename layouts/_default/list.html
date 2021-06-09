@@ -6,7 +6,7 @@
   <header class="page-header"><h1>{{ .Title }}</h1></header>{{ $scope = . }}
 {{ end }}
 
-{{- range .Pages.ByLinkTitle }}
+{{- range .Pages.ByLinkTitle.ByDate.Reverse }}
 
 {{- $class := "post-entry" }}
 <article class="{{ $class }}">

@@ -6,6 +6,7 @@
   Welcome, to my official blog
 </h2>
 
+
 <ul class="post-tags text-center">
   {{ range .Site.Taxonomies.tags }}
           <li>
@@ -19,23 +20,22 @@
 
 <hr>
 <h3 class="margin-y">Recent posts</h3>
-{{- range .Site.RegularPages.ByPublishDate.Reverse }}
-
+{{- range where .Pages.ByDate.Reverse "Section" "posts" }}
 {{- $class := "post-entry" }}
-<article class="{{ $class }}">
-  <header class="entry-header">
-    <h2>{{ .Title }}</h2>
-  </header>
-  <section class="entry-content">
-   <p>{{ .Description }}</p>
-  </section>
-  <footer class="entry-footer">
-    <time>{{ .Date.Format "January 2, 2006" }}</time>
-  </footer>
-  <a class="entry-link" href="{{ .Permalink }}"></a>
-</article>
+  {{ range .Pages }}
+    <article class="{{ $class }}">
+      <header class="entry-header">
+        <h2>{{ .Title }}</h2>
+      </header>
+      <section class="entry-content">
+      <p>{{ .Description }}</p>
+      </section>
+      <footer class="entry-footer">
+        <time>{{ .Date.Format "January 2, 2006" }}</time>
+      </footer>
+      <a class="entry-link" href="{{ .Permalink }}"></a>
+    </article>
+  {{ end }}
 {{- end }}
-
-
 
 {{- partial "footer.html" . }}
