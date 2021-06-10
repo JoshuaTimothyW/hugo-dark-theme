@@ -3,7 +3,7 @@
       {{- if .IsHome }}
       <h1 class="logo"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
       {{- else }}
-      <p class="logo"><a href="{{  "/" | relURL }}">{{ .Site.Title }}</a></p>
+      <h1 class="logo"><a href="{{  "/" | relURL }}">{{ .Site.Title }}</a></h1>
       {{- end }}
       {{- if .Site.Menus.main }}
       <ul class="menu">

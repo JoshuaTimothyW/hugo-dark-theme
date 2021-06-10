@@ -93,7 +93,7 @@ h6{
   line-height: 1.2;
 }
 p {
-  /* padding: 0 0.5rem; */
+  padding: 0 0.5rem;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -106,7 +106,7 @@ ul {
   padding: 0;
 }
 ul li {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 a {
   color: var(--primary);
@@ -164,8 +164,8 @@ img {
 }
 .logo,
 .menu {
-  /* margin-left: var(--gap);
-  margin-right: var(--gap); */
+  margin-left: var(--gap);
+  margin-right: var(--gap);
 }
 .logo a {
   font-size: 18px;
