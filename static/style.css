@@ -105,9 +105,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-ul li {
-  padding: 0.5rem 0;
-}
 a {
   color: var(--primary);
   text-decoration: none;
