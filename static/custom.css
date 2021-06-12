@@ -14,10 +14,8 @@ body{
 }
 
 .notification {
-    background-color: #555;
-    color: white;
     text-decoration: none;
-    padding: 15px 26px;
+    padding: 10px 26px;
     position: relative;
     display: inline-block;
     border-radius: 2px;
