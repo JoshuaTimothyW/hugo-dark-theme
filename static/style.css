@@ -151,7 +151,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* max-width: calc(var(--nav-width) + var(--gap) * 2); */
+  max-width: calc(var(--nav-width) + var(--gap) * 2);
   margin-left: auto;
   margin-right: auto;
 }
@@ -161,7 +161,7 @@ img {
 }
 .logo,
 .menu {
-  margin-left: var(--gap);
+  /* margin-left: var(--gap); */
   margin-right: var(--gap);
 }
 .logo a {
