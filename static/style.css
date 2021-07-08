@@ -486,13 +486,15 @@ img {
   display: block;
   padding-left: 14px;
   padding-right: 14px;
-  color: var(--secondary);
+  color: white;
   font-size: 14px;
   line-height: 34px;
   background: var(--code-bg);
+  /* background: #54B689; */
   border-radius: 4px;
 }
 .post-tags a:hover {
+  /* background: #52c590; */
   background: var(--border);
 }
 /* Footer

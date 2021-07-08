@@ -3,7 +3,7 @@
 {{- $scope := .Site }}
 
 {{- if .Title }}
-  <header class="page-header"><h1>{{ .Title }}</h1></header>{{ $scope = . }}
+  <header class="page-header"><h1>#{{ .Title }}</h1></header>{{ $scope = . }}
 {{ end }}
 
 {{- range .Pages.ByLinkTitle.ByDate.Reverse }}
