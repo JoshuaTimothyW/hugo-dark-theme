@@ -2,9 +2,9 @@
 
 {{- $scope := .Site }}
 
-{{- if .Title }}
-  <header class="page-header"><h1>#{{ .Title }}</h1></header>{{ $scope = . }}
-{{ end }}
+<!-- {{- if .Title }}
+  <header class="page-header"><h1>{{ .Title }}</h1></header>{{ $scope = . }}
+{{ end }} -->
 
 {{- range .Pages.ByLinkTitle.ByDate.Reverse }}
 
@@ -18,8 +18,10 @@
   </section>
   <footer class="entry-footer">
     <time>{{ .Date.Format "January 2, 2006" }}</time>
+
   </footer>
   <a class="entry-link" href="{{ .Permalink }}"></a>
+  <div class="entry-footer" >Read more →</div>
 </article>
 {{- end }}
 
