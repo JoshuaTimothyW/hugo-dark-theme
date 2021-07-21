@@ -13,3 +13,9 @@ body{
     margin-bottom: 1rem;
 }
 
+.toc{
+    border: 0.5px solid #eee;
+    border-radius: 25px;
+    padding: 0 1rem;
+    margin: 2rem 0;
+}
