@@ -19,3 +19,8 @@ body{
     padding: 0 1rem;
     margin: 2rem 0;
 }
+
+.pink-tag{
+    background: #ff4088;
+    color: #eee;
+}

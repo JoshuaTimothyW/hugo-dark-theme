@@ -14,10 +14,20 @@
     <h2>{{ .Title }}</h2>
   </header>
   <section class="entry-content">
-   <p>{{ .Description }}</p>
-  </section>
-  <footer class="entry-footer">
     <time>{{ .Date.Format "January 2, 2006" }}</time>
+      
+    {{ if .Params.tags }}
+      <ul class="post-tags">
+        {{ range .Params.tags }}
+        <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">
+            #{{- . -}}
+          </a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </section>
+
+  <footer class="entry-footer">
 
   </footer>
   <a class="entry-link" href="{{ .Permalink }}"></a>

@@ -41,6 +41,7 @@
   --hljs-bg: #2e2e33;
   --code-bg: #37383e;
   --border: #5b5d67;
+  --tag-bg: rgb(30, 135, 240);
 }
 .list {
   background: var(--code-bg);
@@ -289,6 +290,7 @@ img {
   top: 0;
   bottom: 0;
 }
+
 /* Post single
 -------------------------------------------------- */
 .post-header {
@@ -496,14 +498,17 @@ img {
   color: white;
   font-size: 14px;
   line-height: 34px;
-  background: var(--code-bg);
   /* background: #54B689; */
+  /* background: var(--code-bg); */
+  background: var(--tag-bg);
   border-radius: 4px;
 }
 .post-tags a:hover {
   /* background: #52c590; */
-  background: var(--border);
+  /* background: var(--border); */
+  background: #0dcaf0;
 }
+
 /* Footer
 -------------------------------------------------- */
 .footer {
