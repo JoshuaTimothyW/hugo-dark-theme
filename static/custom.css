@@ -21,6 +21,33 @@ body{
 }
 
 .pink-tag{
-    background: #ff4088;
+    border-radius: 25px;
+    padding-left: 10px;
+    background: linear-gradient(to right, #ff4088, transparent);
     color: #eee;
+}
+
+@keyframes fade {
+    from {background-color:#ff4088}
+    to {background-color:transparent}
+}
+
+h2::before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    background: rgb(30, 135, 240);
+    position:absolute;
+    left:0;
+    top:0
+}
+
+.post-content h2{
+    font-size:2rem;
+    position:relative;
+    color:  #0dcaf0;
+    padding-left:1.5rem;
+    margin-top:1.5rem;
+    margin-bottom:1.5rem;
 }

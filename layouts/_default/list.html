@@ -25,13 +25,10 @@
         {{ end }}
       </ul>
     {{ end }}
+    <a href="{{ .Permalink }}">
+      {{ .Summary }}
+    </a>
   </section>
-
-  <footer class="entry-footer">
-
-  </footer>
-  <a class="entry-link" href="{{ .Permalink }}"></a>
-  <div class="entry-footer" >Read more →</div>
 </article>
 {{- end }}
 
