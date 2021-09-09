@@ -10,12 +10,13 @@
 
 {{- $class := "post-entry" }}
 <article class="{{ $class }}">
-  <header class="entry-header">
-    <h2>{{ .Title }}</h2>
-  </header>
+  <a href="{{ .Permalink }}">
+    <header class="entry-header">
+      <h2>{{ .Title }}</h2>
+      <time>{{ .Date.Format "January 2, 2006" }}</time>
+    </header>
+  </a>
   <section class="entry-content">
-    <time>{{ .Date.Format "January 2, 2006" }}</time>
-      
     {{ if .Params.tags }}
       <ul class="post-tags">
         {{ range .Params.tags }}
