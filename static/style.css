@@ -254,6 +254,7 @@ img {
   position: relative;
   margin-bottom: var(--gap);
   padding: var(--gap);
+  padding-bottom: 5px;
   background: var(--entry);
   border-radius: var(--radius);
   transition: transform 0.1s;
@@ -282,6 +283,7 @@ img {
 .entry-footer {
   color: var(--secondary);
   font-size: 13px;
+  margin-top: 20px;
 }
 .entry-link {
   position: absolute;
