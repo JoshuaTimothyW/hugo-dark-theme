@@ -1,10 +1,6 @@
 <header class="header">
     <nav class="nav">
-      {{- if .IsHome }}
-      <h1 class="logo"><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
-      {{- else }}
-      <h1 class="logo"><a href="{{  "/" | relURL }}">{{ .Site.Title }}</a></h1>
-      {{- end }}
+      <a class="logo" href="{{  "/" | relURL }}">{{ .Site.Title }}</a>
       {{- if .Site.Menus.main }}
       <ul class="menu">
         {{- range .Site.Menus.main }}

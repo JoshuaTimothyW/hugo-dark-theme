@@ -2,37 +2,30 @@
 
 {{- $scope := .Site }}
 
-<h2 class="text-center margin-y">
-  Welcome, to my official blog
-</h2>
-
-
-<ul class="post-tags text-center">
-  {{ range .Site.Taxonomies.tags }}
-          <li>
-            <a class="notification" href="{{ .Page.Permalink }}">
-              {{ .Page.Title }}
-              <!-- <span class="badge">{{ .Count }}</span> -->
-            </a> 
-          </li>
-  {{ end }}
-</ul>
-
-<hr>
-<h3 class="margin-y">Recent posts</h3>
 {{- range where .Pages.ByDate.Reverse "Section" "posts" }}
 {{- $class := "post-entry" }}
   {{ range .Pages }}
-    <article class="{{ $class }}">
+    <article class="{{$class}}">
+      <a  href="{{ .Permalink }}">
       <header class="entry-header">
-        <h2>{{ .Title }}</h2>
-      </header>
-      <section class="entry-content">
-        <time>{{ .Date.Format "January 2, 2006" }}</time>
-      </section>
+          <h2>{{ .Title }}</h2>
+        </header> 
+        <section class="entry-content">
+          {{ .Summary }}
+        </section>
+        <time><strong>{{ .Date.Format "January 2, 2006" }}</strong></time>
+      </a>
       <footer class="entry-footer">
+        {{ if .Params.tags }}
+            <ul class="post-tags">
+              {{ range .Params.tags }}
+              <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">
+                #{{- . -}}
+                </a></li>
+              {{ end }}
+            </ul>
+        {{ end }}
       </footer>
-      <a class="entry-link" href="{{ .Permalink }}"></a>
     </article>
   {{ end }}
 {{- end }}

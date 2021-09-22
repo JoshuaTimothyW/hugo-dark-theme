@@ -14,23 +14,21 @@
     <header class="entry-header">
       <h2>{{ .Title }}</h2>
     </header>
+    <section class="entry-content">
+        {{ .Summary }}
+    </section>
+    <time><strong>{{ .Date.Format "January 2, 2006" }}</strong></time>
   </a>
-  <section class="entry-content">
-    {{ if .Params.tags }}
-      <ul class="post-tags">
-        {{ range .Params.tags }}
-        <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">
-            #{{- . -}}
-          </a></li>
-        {{ end }}
-      </ul>
-    {{ end }}
-    <a href="{{ .Permalink }}">
-      {{ .Summary }}
-    </a>
-  </section>
   <footer class="entry-footer">
-    <time>{{ .Date.Format "January 2, 2006" }}</time>
+    {{ if .Params.tags }}
+        <ul class="post-tags">
+          {{ range .Params.tags }}
+          <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">
+            #{{- . -}}
+            </a></li>
+          {{ end }}
+        </ul>
+    {{ end }}
   </footer>
 </article>
 {{- end }}
