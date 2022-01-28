@@ -13,15 +13,17 @@
         <section class="entry-content">
           {{ .Summary }}
         </section>
-        <time><strong>{{ .Date.Format "January 2, 2006" }}</strong></time>
+        <time><small>{{ .Date.Format "January 2, 2006" }}</small></time>
       </a>
       <footer class="entry-footer">
         {{ if .Params.tags }}
             <ul class="post-tags">
               {{ range .Params.tags }}
-              <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">
-                #{{- . -}}
-                </a></li>
+                <li>
+                  <a href="{{ "/tags/" | relURL }}{{ . | urlize }}" >
+                    #{{- . -}}
+                  </a>
+                </li>
               {{ end }}
             </ul>
         {{ end }}

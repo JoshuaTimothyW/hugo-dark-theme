@@ -346,6 +346,7 @@ img {
 }
 .post-content a {
   box-shadow: 0 1px 0 var(--primary);
+  color: #c070f5;
 }
 .post-content a code {
   margin-left: 0;
@@ -497,20 +498,14 @@ img {
   margin-bottom: 0.5rem;
   padding-left: 4px;
   padding-right: 4px;
-  /* color: white; */
-  color: var(--tag-bg);
   font-size: 14px;
   line-height: 34px;
-  /* background: #54B689; */
-  /* background: var(--code-bg); */
-  /* background: var(--tag-bg); */
-  border-radius: 4px;
+  border-radius: 15px;
+  background-color: var(--tag-bg);
+  color: #eee;
 }
-.post-tags a:hover {
-  /* background: #52c590; */
-  /* background: var(--border); */
-  /* background: #0dcaf0; */
-  color: #0dcaf0;
+.toc a {
+  color: #eee;
 }
 
 /* Footer
