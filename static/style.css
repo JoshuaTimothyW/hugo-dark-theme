@@ -31,7 +31,7 @@
   --border: #eee;
 }
 .dark {
-  --theme: #1d1e20;
+  --theme:  #1d1e20;
   --entry: #2e2e33;
   --primary: rgba(255, 255, 255, 0.84);
   --secondary: rgba(255, 255, 255, 0.56);
@@ -417,7 +417,7 @@ img {
   margin-bottom: 32px;
   background: var(--hljs-bg) !important;
   border-radius: var(--radius);
-  overflow-x: auto;
+  /* overflow-x: auto; */
 }
 .post-content ul pre {
   margin-left: calc(var(--gap) * -2);
@@ -471,7 +471,9 @@ img {
 .post-content blockquote {
   margin: 0 0 0 calc(var(--gap) * -1);
   padding: 0 0 0 21px;
-  border-left: 3px solid var(--primary);
+  background: var(--code-bg);
+  border-radius: 2px;
+  /* border-left: 3px solid var(--primary); */
 }
 .post-content hr {
   height: 1px;
