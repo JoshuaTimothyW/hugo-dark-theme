@@ -346,7 +346,7 @@ img {
 }
 .post-content a {
   box-shadow: 0 1px 0 var(--primary);
-  color: #c070f5;
+  color: #d496f8;
 }
 .post-content a code {
   margin-left: 0;
@@ -417,7 +417,17 @@ img {
   margin-bottom: 32px;
   background: var(--hljs-bg) !important;
   border-radius: var(--radius);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  text-align: justify;
   /* overflow-x: auto; */
+}
+@media all and (orientation:landscape){
+    pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        text-align: justify;
+    }
 }
 .post-content ul pre {
   margin-left: calc(var(--gap) * -2);

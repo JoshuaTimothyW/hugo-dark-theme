@@ -56,6 +56,15 @@ h2::before{
     color: #abff00;
 }
 
+.redis {
+    background-color: #e12020;
+    color: #fff !important;
+}
+
+iframe {
+    padding-bottom: 1rem;
+}
+
 /* Small screens */
 @media only screen and (max-width: 800px) {
     .menu a{
