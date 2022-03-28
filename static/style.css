@@ -41,7 +41,7 @@
   --hljs-bg: #2e2e33;
   --code-bg: #37383e;
   --border: #5b5d67;
-  --tag-bg: rgb(30, 135, 240);
+  --tag-bg: hsl(153, 60%, 53%);
 }
 .list {
   background: var(--code-bg);
@@ -346,7 +346,7 @@ img {
 }
 .post-content a {
   box-shadow: 0 1px 0 var(--primary);
-  color: #d496f8;
+  font-weight: bold;
 }
 .post-content a code {
   margin-left: 0;
@@ -474,7 +474,8 @@ img {
   margin-left: 0;
   margin-right: 0;
   padding: var(--gap);
-  color: rgba(255, 255, 255, 0.8);
+  color: #eee;
+  font-size: 12px;
   background: transparent;
   border-radius: 0;
 }
@@ -508,14 +509,14 @@ img {
 .post-tags a {
   display: block;
   margin-bottom: 0.5rem;
-  padding-left: 4px;
-  padding-right: 4px;
+  padding: 4px 8px;
   font-size: 14px;
-  line-height: 34px;
+  background-color: transparent;
+  color: #65d9a5;
+  border: 1.5px solid var(--tag-bg);
   border-radius: 15px;
-  background-color: var(--tag-bg);
-  color: #eee;
 }
+
 .toc a {
   color: #eee;
 }
@@ -535,6 +536,8 @@ img {
 .footer span {
   margin-left: 1px;
   margin-right: 1px;
+  color: #eee;
+  font-weight: bold;
 }
 .footer a {
   color: inherit;

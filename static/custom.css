@@ -37,7 +37,8 @@ h2::before{
     display: inline-block;
     width: 5px;
     height: 100%;
-    background: rgb(30, 135, 240);
+    /* background: rgb(30, 135, 240); */
+    background: var(--tag-bg);
     position:absolute;
     left:0;
     top:0
@@ -46,19 +47,14 @@ h2::before{
 .post-content h2 {
     font-size:2rem;
     position:relative;
-    color:  #0dcaf0;
+    color:  #eee;
     padding-left:1.5rem;
     margin-top:1.5rem;
     margin-bottom:1.5rem;
 }
 
 .post-content h3 {
-    color: #abff00;
-}
-
-.redis {
-    background-color: #e12020;
-    color: #fff !important;
+    color: hsl(153, 60%, 62%);
 }
 
 iframe {
