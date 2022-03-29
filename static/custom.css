@@ -20,13 +20,6 @@ body{
     margin: 2rem 0;
 }
 
-.pink-tag{
-    border-radius: 25px;
-    padding-left: 10px;
-    background: linear-gradient(to right, #ff4088, transparent);
-    color: #eee;
-}
-
 @keyframes fade {
     from {background-color:#ff4088}
     to {background-color:transparent}
@@ -38,7 +31,7 @@ h2::before{
     width: 5px;
     height: 100%;
     /* background: rgb(30, 135, 240); */
-    background: var(--tag-bg);
+    background: var(--color-success);
     position:absolute;
     left:0;
     top:0
@@ -55,6 +48,10 @@ h2::before{
 
 .post-content h3 {
     color: hsl(153, 60%, 62%);
+}
+
+.post-content h4 {
+    color: hsl(195, 80%, 68%);
 }
 
 iframe {

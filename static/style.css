@@ -41,7 +41,9 @@
   --hljs-bg: #2e2e33;
   --code-bg: #37383e;
   --border: #5b5d67;
-  --tag-bg: hsl(153, 60%, 53%);
+  --color-success: hsl(153, 60%, 53%);
+  --color-success-lighter: hsl(120, 47%, 53%);
+  --color-success-lightest: hsl(120, 47%, 66%);
 }
 .list {
   background: var(--code-bg);
@@ -466,6 +468,7 @@ img {
   font-family: Menlo, Monaco, 'Courier New', Courier, monospace;
   font-size: 0.78em;
   line-height: 1.5;
+  color: hsl(153, 60%, 53%);
   background: var(--code-bg);
   border-radius: 2px;
 }
@@ -513,8 +516,13 @@ img {
   font-size: 14px;
   background-color: transparent;
   color: #65d9a5;
-  border: 1.5px solid var(--tag-bg);
+  border: 1.5px solid var(--color-success);
   border-radius: 15px;
+}
+
+.post-tags a:hover {
+  color: #eee;
+  background-color: var(--color-success);
 }
 
 .toc a {
