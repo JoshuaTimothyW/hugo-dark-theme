@@ -463,7 +463,6 @@ img {
 .post-content .highlight span {
   background: transparent !important;
 }
-
 .post-content code {
   margin-left: 4px;
   margin-right: 4px;
@@ -485,12 +484,16 @@ img {
   background: transparent;
   border-radius: 0;
 }
-.post-content blockquote {
-  margin: 0 0 0 calc(var(--gap) * -1);
-  padding: 0 0 0 21px;
-  background: var(--code-bg);
-  border-radius: 2px;
-  /* border-left: 3px solid var(--primary); */
+
+.post-content blockquote p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #eee;
+}
+.post-content blockquote ul {
+  list-style-type: none;
+  font-size: 14px;
+  color: var(--color-success);
 }
 .post-content hr {
   height: 1px;
