@@ -126,6 +126,7 @@ figure {
 }
 table {
   width: 100%;
+  overflow-x: auto;
   border-collapse: collapse;
   border-spacing: 0;
 }
@@ -398,7 +399,7 @@ img {
   margin-top: 10px;
 }
 .post-content table {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 .post-content table th,
 .post-content table:not(.highlighttable) td {
