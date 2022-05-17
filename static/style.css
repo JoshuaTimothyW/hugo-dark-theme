@@ -423,7 +423,7 @@ img {
   margin-bottom: 32px;
   background: var(--hljs-bg) !important;
   border-radius: var(--radius);
-  white-space: pre-wrap;
+  /* white-space: pre-wrap; */
   word-wrap: break-word;
   text-align: justify;
   /* overflow-x: auto; */
@@ -470,9 +470,11 @@ img {
   padding: 4px 6px;
   font-family: Menlo, Monaco, 'Courier New', Courier, monospace;
   font-size: 0.78em;
+  font-weight: bold;
   line-height: 1.5;
-  color: hsl(153, 60%, 53%);
-  background: var(--code-bg);
+  color: white;
+  background-color: var(--color-success);
+  /* border: 1px solid var(--color-success); */
   border-radius: 2px;
 }
 .post-content pre code {
