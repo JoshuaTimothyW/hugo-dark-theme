@@ -423,10 +423,10 @@ img {
   margin-bottom: 32px;
   background: var(--hljs-bg) !important;
   border-radius: var(--radius);
-  /* white-space: pre-wrap; */
+  white-space: pre-wrap;
   word-wrap: break-word;
   text-align: justify;
-  /* overflow-x: auto; */
+  overflow-x: auto;
 }
 @media all and (orientation:landscape){
     pre {
