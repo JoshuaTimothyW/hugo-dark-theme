@@ -99,4 +99,8 @@ iframe {
     .menu a{
         font-size: 16px;
     }
+
+    .category-tag li + li {
+        margin-left: 5px;
+    }
 }
