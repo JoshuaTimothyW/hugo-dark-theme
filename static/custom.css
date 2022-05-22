@@ -58,6 +58,42 @@ iframe {
     padding-bottom: 1rem;
 }
 
+.category-tag {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.category-tag li {
+    display: inline-block;
+}
+
+.category-tag li + li {
+    margin-left: 3px;
+}
+
+.category-tag a {
+    display: block;
+    margin-bottom: 0.5rem;
+    padding: 4px 8px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.redhat {
+    background-color: crimson;
+    color: #eee;
+}
+
+.ibm {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.redis {
+    background-color: #eee;
+    color: crimson;
+}
+
 /* Small screens */
 @media only screen and (max-width: 800px) {
     .menu a{

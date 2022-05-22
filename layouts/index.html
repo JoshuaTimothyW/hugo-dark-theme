@@ -2,6 +2,15 @@
 
 {{- $scope := .Site }}
 
+<h1>Browse by category</h1>
+<ul class="category-tag">
+    <li><a class="redhat" href="/tags/rhel" >RHEL</a></li>
+    <li><a class="redhat" href="/tags/jboss" >Jboss</a></li>
+    <li><a class="ibm" href="/tags/websphere" >Websphere</a></li>
+    <li><a class="redis" href="/tags/redis" >Redis</a></li>
+    <li><a class="redhat" href="/tags/openshift" >Openshift</a></li>
+</ul>
+
 {{- range where .Pages.ByDate.Reverse "Section" "posts" }}
 {{- $class := "post-entry" }}
   {{ range .Pages }}
@@ -16,7 +25,7 @@
         <time><strong>{{ .Date.Format "January 2, 2006" }}</strong></time>
       </a>
       <footer class="entry-footer">
-        {{ if .Params.tags }}
+        <!-- {{ if .Params.tags }}
             <ul class="post-tags">
               {{ range .Params.tags }}
                 <li>
@@ -26,7 +35,7 @@
                 </li>
               {{ end }}
             </ul>
-        {{ end }}
+        {{ end }} -->
       </footer>
     </article>
   {{ end }}
