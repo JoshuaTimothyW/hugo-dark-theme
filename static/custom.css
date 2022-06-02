@@ -94,9 +94,9 @@ iframe {
     color: crimson;
 }
 
-.kafka{
-    background-color: #eee;
-    color: #000;
+.confluent{
+    background-color: rgb(70, 162, 201);
+    color: midnightblue;
     font-weight: bold;
 }
 
