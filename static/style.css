@@ -416,32 +416,70 @@ img {
   margin-left: 0;
   margin-right: 0;
 }
-.post-content .highlight,
+/* .post-content .highlight,
 .post-content pre {
   margin-left: calc(var(--gap) * -1);
   margin-right: calc(var(--gap) * -1);
   margin-bottom: 32px;
   background: var(--hljs-bg) !important;
   border-radius: var(--radius);
-  /* white-space: pre-wrap;
-  word-wrap: break-word; */
   text-align: justify;
   overflow-x: auto;
+} */
+pre {
+  padding-left: calc(24px * -1);
+  padding-right: calc(24px * -1);
+  margin-bottom: 32px;
+  background: #2e2e33 !important;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
 }
-@media all and (orientation:landscape){
+/* .post-content code {
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 4px 6px;
+  font-family: Menlo, Monaco, 'Courier New', Courier, monospace;
+  font-size: 0.78em;
+  font-weight: bold;
+  line-height: 1.5;
+  color: white;
+  background-color: var(--color-success);
+  border-radius: 2px;
+}
+.post-content pre code {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  padding: var(--gap);
+  color: #eee;
+  font-size: 12px;
+  background: transparent;
+  border-radius: 0;
+} */
+pre code {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  background: transparent;
+  border-radius: 0;
+}
+/* @media all and (orientation:landscape){
     pre {
         white-space: pre-wrap;
         word-wrap: break-word;
         text-align: justify;
     }
-}
+} */
 .post-content ul pre {
   margin-left: calc(var(--gap) * -2);
 }
 .post-content .highlight pre {
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 0;
 }
 /* table */
 .post-content .highlighttable {
@@ -464,30 +502,6 @@ img {
 .post-content .highlight span {
   background: transparent !important;
 }
-.post-content code {
-  margin-left: 4px;
-  margin-right: 4px;
-  padding: 4px 6px;
-  font-family: Menlo, Monaco, 'Courier New', Courier, monospace;
-  font-size: 0.78em;
-  font-weight: bold;
-  line-height: 1.5;
-  color: white;
-  background-color: var(--color-success);
-  /* border: 1px solid var(--color-success); */
-  border-radius: 2px;
-}
-.post-content pre code {
-  display: block;
-  margin-left: 0;
-  margin-right: 0;
-  padding: var(--gap);
-  color: #eee;
-  font-size: 12px;
-  background: transparent;
-  border-radius: 0;
-}
-
 .post-content blockquote p {
   font-size: 14px;
   font-weight: bold;
