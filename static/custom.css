@@ -100,6 +100,10 @@ iframe {
     font-weight: bold;
 }
 
+.elastic{
+    background-image: linear-gradient(to right,rgb(240, 195, 47),rgb(30, 135, 240),hsl(171, 100%, 41%));
+}
+
 /* Small screens */
 @media only screen and (max-width: 800px) {
     .menu a{
