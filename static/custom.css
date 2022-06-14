@@ -92,6 +92,7 @@ iframe {
 .redis {
     background-color: #eee;
     color: crimson;
+    font-weight: bold;
 }
 
 .confluent{
