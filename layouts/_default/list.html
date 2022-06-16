@@ -24,7 +24,7 @@
         <ul class="post-tags">
           {{ range .Params.tags }}
           <li><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">
-            #{{- . -}}
+            {{- . -}}
             </a></li>
           {{ end }}
         </ul>
