@@ -105,6 +105,13 @@ iframe {
     background-image: linear-gradient(to right,rgb(240, 195, 47),rgb(30, 135, 240),hsl(171, 100%, 41%));
 }
 
+.nexus{
+    background-image: linear-gradient(to right,black,#ff4088,#ff4088);
+    font-weight: bold;
+    background-clip: text;
+    color: transparent;
+}
+
 /* Small screens */
 @media only screen and (max-width: 800px) {
     .menu a{

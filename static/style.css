@@ -261,7 +261,7 @@ img {
   margin-bottom: var(--gap);
   padding: var(--gap);
   padding-bottom: 5px;
-  background: var(--entry);
+  /* background: var(--entry); */
   border-radius: var(--radius);
   transition: transform 0.1s;
 }
