@@ -436,7 +436,7 @@ pre {
   word-wrap: break-word;
   overflow-x: auto;
 }
-/* .post-content code {
+.post-content p code {
   margin-left: 4px;
   margin-right: 4px;
   padding: 4px 6px;
@@ -448,7 +448,7 @@ pre {
   background-color: var(--color-success);
   border-radius: 2px;
 }
-.post-content pre code {
+/* .post-content pre code {
   display: block;
   margin-left: 0;
   margin-right: 0;
@@ -458,7 +458,7 @@ pre {
   background: transparent;
   border-radius: 0;
 } */
-pre code {
+.post-content pre code {
   display: block;
   margin-left: 0;
   margin-right: 0;
