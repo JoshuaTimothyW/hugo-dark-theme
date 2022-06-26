@@ -108,8 +108,7 @@ iframe {
 .nexus{
     background-image: linear-gradient(to right,black,#ff4088,#ff4088);
     font-weight: bold;
-    background-clip: text;
-    color: transparent;
+    color: #eee;
 }
 
 /* Small screens */
