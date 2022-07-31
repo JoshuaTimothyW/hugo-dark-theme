@@ -75,7 +75,7 @@ iframe {
     display: block;
     margin-bottom: 0.5rem;
     padding: 4px 8px;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 5px;
 }
 
@@ -90,8 +90,8 @@ iframe {
 }
 
 .redis {
-    background-color: #eee;
-    color: crimson;
+    background-color: #e12020;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -108,7 +108,12 @@ iframe {
 .nexus{
     background-image: linear-gradient(to right,black,#ff4088,#ff4088);
     font-weight: bold;
-    color: #eee;
+    color: #fff;
+}
+
+.docker{
+    background-color: #0E65C9;
+    color: #fff;
 }
 
 /* Small screens */

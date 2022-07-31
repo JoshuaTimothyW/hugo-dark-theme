@@ -29,6 +29,10 @@
   --hljs-bg: #1c1d21;
   --code-bg: #f5f5f5;
   --border: #eee;
+
+  --color-success: hsl(153, 60%, 53%);
+  --color-success-lighter: hsl(120, 47%, 53%);
+  --color-success-lightest: hsl(120, 47%, 66%);
 }
 .dark {
   --theme:  #1d1e20;
@@ -445,6 +449,7 @@ pre {
   font-weight: bold;
   line-height: 1.5;
   color: white;
+  /* text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; */
   background-color: var(--color-success);
   border-radius: 2px;
 }
@@ -544,12 +549,12 @@ pre {
 }
 
 .post-tags a:hover {
-  color: #eee;
+  color: var(--primary);
   background-color: var(--color-success);
 }
 
 .toc a {
-  color: #eee;
+  color: var(--primary);
 }
 
 /* Footer
